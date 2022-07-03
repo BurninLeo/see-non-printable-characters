@@ -121,7 +121,7 @@ class ViewChars
 	
 	private static function text2html($s)
 	{
-	    $html = '<div class="output">'.NL;
+	    $html = '<div class="output" dir="auto">'.NL;
 	    
 	    $sl = mb_strlen($s);
 	    $nlc = 0;
@@ -169,7 +169,7 @@ class ViewChars
  				Please paste the string here:
  			</div>
  			<div>
- 				<textarea name="s" rows="8" cols="40" style="width: 100%; box-sizing: border-box;">'.htmlspecialchars($s).'</textarea>
+ 				<textarea name="s" rows="8" cols="40" style="width: 100%; box-sizing: border-box;" dir="auto">'.htmlspecialchars($s).'</textarea>
  			</div>
  			<div>
  				<button type="submit">Show me the characters</button>
